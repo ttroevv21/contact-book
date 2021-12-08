@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Create contact</h2>
+
+        <form class="add-contact">
+            <input class="name add" placeholder="Enter name" type="text">
+            <input class="lastname add" placeholder="Enter lastname" type="text">
+            <input id="phone" placeholder="Enter phone number" type="tel">
+            <button class="create-btn" type="submit">Create contact</button>
+        </form>
+
+        <h2>Your contacts</h2>
+
+        <table class="contacts">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Last-name</th>
+                    <th>Phone-number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4">Your contact-list is empty</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="modal">
+            <form class="modal-form">
+                <div class="modal-body">
+                    <div class="data">
+                        <h2>Edit contact-info</h2>
+                        <input class="mod edit-name" type="text">
+                        <input class="mod edit-lastname" type="text">
+                        <input class="mod edit-phone" type="tel">
+                        <button type="submit" class="save-btn">SAVE</button>
+                    </div>
+                    <button class="close-btn">&#10006</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+        </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

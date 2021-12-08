@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+body { 
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+}
+
+.add-contact {
+    /* position: relative; */
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.add {
+    position: relative;
+   border: 1px solid #cccccc;
+   border-radius: 3px; 
+   background: #ffffff;
+   height: 24px;
+   width: 120px;
+   color: black;
+   font-size: 14px;
+   margin-right: 5px;
+}
+
+h2 {
+    top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.contacts {
+    width: 70%;
+    margin: auto;
+}
+
+.contacts tbody {
+    text-align: center;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.modal-body {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 250px;
+    background-color: rgb(219, 159, 159);
+    border: 3px solid black;
+    text-align: center;
+    padding: 25px;
+    border-radius: 40px;
+    -webkit-box-shadow: 1px -1px 12px -1px #000000; 
+    box-shadow: 1px -1px 12px -1px #000000;
+}
+
+.mod {
+    position: relative; 
+    top: 10px;
+    width: 250px;
+    height: 30px;
+
+    border-radius: 7px;
+}
+
+.create-btn { 
+    position: relative;
+    margin-left: 5px;
+    width: 100px;
+}
+
+.close-btn {
+    position: absolute;
+    right: 13px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 25xp;
+    cursor: pointer;
+}
+
+.data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.save-btn {
+    position: relative;
+    top: 20px;
+
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.save-btn:hover { background: rgba(255,255,255,.5); }
+.save-btn:active { background: white; }
+
+.table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
